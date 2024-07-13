@@ -1,3 +1,16 @@
 spring:
   application:
     name: clanner-be
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: ${CLANNER_BE_DB}
+    username: ${CLANNER_BE_DB_USERNAME}
+    password: ${CLANNER_BE_DB_PASSWORD}
+graphql:
+  graphiql:
+    enabled: true
+  props:
+    resources:
+      query: query.graphql
+      defaultQuery: defaultQuery.graphql
+      variables: variables.json
