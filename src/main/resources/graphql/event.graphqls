@@ -1,0 +1,18 @@
+enum Confidentiality {
+    PUBLIC
+    LEADER_ONLY
+    PRIVATE
+}
+
+input EventInput {
+    id: Int
+}
+
+type Event {
+    id: Int
+    name: String
+    startAt: DateTime
+    endAt: DateTime
+    confidentiality: Confidentiality
+    test: Boolean
+}

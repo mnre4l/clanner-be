@@ -8,8 +8,7 @@ import org.springframework.context.annotation.Import;
 @SpringBootTest
 class ClannerBeApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
-
+    @Test
+    void contextLoads() {
+    }
 }
