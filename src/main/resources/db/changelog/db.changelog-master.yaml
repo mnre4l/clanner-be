@@ -1,3 +1,5 @@
 databaseChangeLog:
   - include:
       file: db/changelog/migrations/2024-07-14--01--create-event-table.sql
+  - include:
+      file: db/changelog/migrations/2024-07-20--01-create-user-table.sql

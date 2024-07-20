@@ -13,6 +13,7 @@ import java.time.LocalDateTime;
 
 @Getter
 @Setter
+@Table(name = "event")
 @Entity
 @Accessors(fluent = true)
 @NoArgsConstructor
