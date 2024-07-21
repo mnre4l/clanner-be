@@ -8,6 +8,7 @@ import lombok.experimental.Accessors;
 import ru.mntreal.clanner.be.planning.main.jpa.entity.PlanningEntity;
 import ru.mntreal.clanner.be.user.jpa.entity.UserEntity;
 
+import java.time.Instant;
 import java.util.Set;
 
 @Getter
@@ -31,8 +32,9 @@ public class PartyEntity {
     private String name;
     @OneToOne
     private UserEntity leader;
-    @OneToMany(fetch = FetchType.LAZY)
+    @ManyToMany
     private Set<UserEntity> participants;
     @ManyToOne(fetch = FetchType.LAZY)
     private PlanningEntity planning;
+    private Instant createdAt;
 }
